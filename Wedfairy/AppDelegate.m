@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "UMSocial.h"
 #import "UMSocialWechatHandler.h"
+#import <PgySDK/PgyManager.h>
 
 @interface AppDelegate ()
 
@@ -22,6 +23,10 @@
     
     [UMSocialData setAppKey:@"55ab622967e58e5411005fde"];
     [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.wedfairy.com"];
+    [[PgyManager sharedPgyManager] startManagerWithAppId:@"4c1f91082f65e0f49425309e5bdf88bf"];
+    
+    [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToQQ,UMShareToQzone,UMShareToWechatSession,UMShareToWechatTimeline]];
+    
     
     return YES;
 }

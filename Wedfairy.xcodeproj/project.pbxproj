@@ -37,6 +37,21 @@
 		D9874AAE1B4E7139009BDFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAD1B4E7139009BDFDB /* Images.xcassets */; };
 		D9874AB11B4E7139009BDFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAF1B4E7139009BDFDB /* LaunchScreen.xib */; };
 		D9874ABD1B4E7139009BDFDB /* WedfairyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874ABC1B4E7139009BDFDB /* WedfairyTests.m */; };
+		D9DBA5D31B5BF261002936B2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA5D21B5BF261002936B2 /* ImageIO.framework */; };
+		D9DBA5DC1B5BF7CD002936B2 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */; };
+		D9DBA5DD1B5BF7CD002936B2 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */; };
+		D9DBA5DE1B5BF7CD002936B2 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D71B5BF7CD002936B2 /* Icon-60@3x.png */; };
+		D9DBA5DF1B5BF7CD002936B2 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D81B5BF7CD002936B2 /* Icon-Small@2x.png */; };
+		D9DBA5E01B5BF7CD002936B2 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D91B5BF7CD002936B2 /* Icon-Small@3x.png */; };
+		D9DBA5E11B5BF7CE002936B2 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5DA1B5BF7CD002936B2 /* iTunesArtwork.png */; };
+		D9DBA5E21B5BF7CE002936B2 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5DB1B5BF7CD002936B2 /* iTunesArtwork@2x.png */; };
+		D9DBA5E51B5BF9C9002936B2 /* wedfairy_red_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5E41B5BF9C9002936B2 /* wedfairy_red_logo.jpg */; };
+		D9DBA6361B5BFAFB002936B2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA6351B5BFAFB002936B2 /* OpenGLES.framework */; };
+		D9DBA6381B5BFB0D002936B2 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA6371B5BFB0D002936B2 /* SceneKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D9DBA63A1B5BFB1D002936B2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA6391B5BFB1D002936B2 /* CoreMotion.framework */; };
+		D9DBA63C1B5BFB24002936B2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA63B1B5BFB24002936B2 /* AudioToolbox.framework */; };
+		D9DBA63E1B5BFB29002936B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA63D1B5BFB29002936B2 /* AVFoundation.framework */; };
+		D9DBA6401B5BFB45002936B2 /* PgySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA63F1B5BFB45002936B2 /* PgySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +117,21 @@
 		D9874AB61B4E7139009BDFDB /* WedfairyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WedfairyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9874ABB1B4E7139009BDFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9874ABC1B4E7139009BDFDB /* WedfairyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WedfairyTests.m; sourceTree = "<group>"; };
+		D9DBA5D21B5BF261002936B2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		D9DBA5D71B5BF7CD002936B2 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		D9DBA5D81B5BF7CD002936B2 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		D9DBA5D91B5BF7CD002936B2 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		D9DBA5DA1B5BF7CD002936B2 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		D9DBA5DB1B5BF7CD002936B2 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		D9DBA5E41B5BF9C9002936B2 /* wedfairy_red_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wedfairy_red_logo.jpg; sourceTree = "<group>"; };
+		D9DBA6351B5BFAFB002936B2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D9DBA6371B5BFB0D002936B2 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		D9DBA6391B5BFB1D002936B2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D9DBA63B1B5BFB24002936B2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D9DBA63D1B5BFB29002936B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9DBA63F1B5BFB45002936B2 /* PgySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PgySDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +139,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DBA63E1B5BFB29002936B2 /* AVFoundation.framework in Frameworks */,
+				D9DBA63C1B5BFB24002936B2 /* AudioToolbox.framework in Frameworks */,
+				D9DBA63A1B5BFB1D002936B2 /* CoreMotion.framework in Frameworks */,
+				D9DBA6381B5BFB0D002936B2 /* SceneKit.framework in Frameworks */,
+				D9DBA6361B5BFAFB002936B2 /* OpenGLES.framework in Frameworks */,
+				D9DBA5D31B5BF261002936B2 /* ImageIO.framework in Frameworks */,
 				D928A63A1B5BAAD400256CBA /* libz.dylib in Frameworks */,
 				D928A6381B5BAACF00256CBA /* libstdc++.dylib in Frameworks */,
 				D928A6361B5BAAC900256CBA /* CoreTelephony.framework in Frameworks */,
@@ -119,6 +155,7 @@
 				D928A62C1B5BAAA400256CBA /* Security.framework in Frameworks */,
 				D928A6291B5BA44A00256CBA /* libSocialWechat.a in Frameworks */,
 				D928A6191B5B9B5300256CBA /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
+				D9DBA6401B5BFB45002936B2 /* PgySDK.framework in Frameworks */,
 				D928A62A1B5BA44A00256CBA /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,15 +181,17 @@
 		D928A5FC1B5B9B4300256CBA /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D9DBA63F1B5BFB45002936B2 /* PgySDK.framework */,
+				D928A5FD1B5B9B5200256CBA /* UMSocial_Sdk_4.2.3 */,
+				D928A62B1B5BAAA400256CBA /* Security.framework */,
+				D928A62F1B5BAAB200256CBA /* SystemConfiguration.framework */,
+				D928A6311B5BAABD00256CBA /* CoreGraphics.framework */,
+				D928A6351B5BAAC900256CBA /* CoreTelephony.framework */,
+				D9DBA5D21B5BF261002936B2 /* ImageIO.framework */,
 				D928A6391B5BAAD400256CBA /* libz.dylib */,
 				D928A6371B5BAACF00256CBA /* libstdc++.dylib */,
-				D928A6351B5BAAC900256CBA /* CoreTelephony.framework */,
 				D928A6331B5BAAC300256CBA /* libsqlite3.dylib */,
-				D928A6311B5BAABD00256CBA /* CoreGraphics.framework */,
-				D928A62F1B5BAAB200256CBA /* SystemConfiguration.framework */,
 				D928A62D1B5BAAAB00256CBA /* libiconv.dylib */,
-				D928A62B1B5BAAA400256CBA /* Security.framework */,
-				D928A5FD1B5B9B5200256CBA /* UMSocial_Sdk_4.2.3 */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -218,6 +257,11 @@
 		D9874A941B4E7139009BDFDB = {
 			isa = PBXGroup;
 			children = (
+				D9DBA63D1B5BFB29002936B2 /* AVFoundation.framework */,
+				D9DBA63B1B5BFB24002936B2 /* AudioToolbox.framework */,
+				D9DBA6391B5BFB1D002936B2 /* CoreMotion.framework */,
+				D9DBA6371B5BFB0D002936B2 /* SceneKit.framework */,
+				D9DBA6351B5BFAFB002936B2 /* OpenGLES.framework */,
 				D9874A9F1B4E7139009BDFDB /* Wedfairy */,
 				D9874AB91B4E7139009BDFDB /* WedfairyTests */,
 				D9874A9E1B4E7139009BDFDB /* Products */,
@@ -255,6 +299,7 @@
 		D9874AA01B4E7139009BDFDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9DBA5E31B5BF93F002936B2 /* Images */,
 				D9874AA11B4E7139009BDFDB /* Info.plist */,
 				D9874AA21B4E7139009BDFDB /* main.m */,
 			);
@@ -276,6 +321,29 @@
 				D9874ABB1B4E7139009BDFDB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9DBA5D41B5BF7CD002936B2 /* wedfairy icon set */ = {
+			isa = PBXGroup;
+			children = (
+				D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */,
+				D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */,
+				D9DBA5D71B5BF7CD002936B2 /* Icon-60@3x.png */,
+				D9DBA5D81B5BF7CD002936B2 /* Icon-Small@2x.png */,
+				D9DBA5D91B5BF7CD002936B2 /* Icon-Small@3x.png */,
+				D9DBA5DA1B5BF7CD002936B2 /* iTunesArtwork.png */,
+				D9DBA5DB1B5BF7CD002936B2 /* iTunesArtwork@2x.png */,
+			);
+			path = "wedfairy icon set";
+			sourceTree = "<group>";
+		};
+		D9DBA5E31B5BF93F002936B2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D9DBA5E41B5BF9C9002936B2 /* wedfairy_red_logo.jpg */,
+				D9DBA5D41B5BF7CD002936B2 /* wedfairy icon set */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,17 +429,25 @@
 			files = (
 				D928A61E1B5B9B5300256CBA /* UMShareEditViewControlleriPad.xib in Resources */,
 				D928A6201B5B9B5300256CBA /* UMSnsAccountViewController.xib in Resources */,
+				D9DBA5E01B5BF7CD002936B2 /* Icon-Small@3x.png in Resources */,
+				D9DBA5E51B5BF9C9002936B2 /* wedfairy_red_logo.jpg in Resources */,
 				D928A61B1B5B9B5300256CBA /* UMSCommentInputController.xib in Resources */,
+				D9DBA5DF1B5BF7CD002936B2 /* Icon-Small@2x.png in Resources */,
 				D928A61A1B5B9B5300256CBA /* UMSCommentDetailController.xib in Resources */,
 				D9874AAC1B4E7139009BDFDB /* Main.storyboard in Resources */,
 				D9874AB11B4E7139009BDFDB /* LaunchScreen.xib in Resources */,
 				D928A6221B5B9B5300256CBA /* UMSocialSDKResourcesNew.bundle in Resources */,
+				D9DBA5DD1B5BF7CD002936B2 /* Icon-60@2x.png in Resources */,
 				D928A61C1B5B9B5300256CBA /* UMSCommentInputControlleriPad.xib in Resources */,
 				D928A61D1B5B9B5300256CBA /* UMShareEditViewController.xib in Resources */,
+				D9DBA5DC1B5BF7CD002936B2 /* Icon-40@2x.png in Resources */,
 				D928A6211B5B9B5300256CBA /* UMSShareListController.xib in Resources */,
 				D928A6181B5B9B5300256CBA /* UMSocialLocalizable.strings in Resources */,
 				D9874AAE1B4E7139009BDFDB /* Images.xcassets in Resources */,
+				D9DBA5E21B5BF7CE002936B2 /* iTunesArtwork@2x.png in Resources */,
 				D928A5E21B58E3FA00256CBA /* Adjust_Navbar.js in Resources */,
+				D9DBA5DE1B5BF7CD002936B2 /* Icon-60@3x.png in Resources */,
+				D9DBA5E11B5BF7CE002936B2 /* iTunesArtwork.png in Resources */,
 				D928A61F1B5B9B5300256CBA /* UMSLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +604,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Wedfairy/PgySDK/demo/PgySDKDemo",
+					"$(PROJECT_DIR)/Wedfairy/PgySDK/sdk",
+					"$(PROJECT_DIR)/Wedfairy",
+				);
 				INFOPLIST_FILE = Wedfairy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,6 +626,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Wedfairy/PgySDK/demo/PgySDKDemo",
+					"$(PROJECT_DIR)/Wedfairy/PgySDK/sdk",
+					"$(PROJECT_DIR)/Wedfairy",
+				);
 				INFOPLIST_FILE = Wedfairy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

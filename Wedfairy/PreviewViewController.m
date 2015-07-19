@@ -83,8 +83,9 @@
                                              appKey:@"55ab622967e58e5411005fde"
                                           shareText:[story_dict objectForKey:@"description"]
                                          shareImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[story_dict objectForKey:@"img_url"]]]]
-                                    shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToWechatSession,UMShareToWechatTimeline, nil]
+                                    shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToRenren,UMShareToWechatSession,UMShareToWechatTimeline, nil]
                                            delegate:self];
+
     }
 }
 
