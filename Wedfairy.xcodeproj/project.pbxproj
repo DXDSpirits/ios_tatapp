@@ -395,6 +395,7 @@
 				TargetAttributes = {
 					D9874A9C1B4E7139009BDFDB = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = FM4EYX3227;
 					};
 					D9874AB51B4E7139009BDFDB = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -620,7 +621,7 @@
 					"$(PROJECT_DIR)/Wedfairy/UMSocial_Sdk_4.2.3/Wechat",
 				);
 				PRODUCT_NAME = "八音盒";
-				PROVISIONING_PROFILE = "cca69ae7-df4c-4097-9a91-ab9eacf06968";
+				PROVISIONING_PROFILE = "361ba688-89ec-4f83-8709-272694598c1c";
 			};
 			name = Debug;
 		};
@@ -628,7 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wedfairy/PgySDK/demo/PgySDKDemo",
@@ -644,7 +645,7 @@
 					"$(PROJECT_DIR)/Wedfairy/UMSocial_Sdk_4.2.3/Wechat",
 				);
 				PRODUCT_NAME = "八音盒";
-				PROVISIONING_PROFILE = "cca69ae7-df4c-4097-9a91-ab9eacf06968";
+				PROVISIONING_PROFILE = "01af453e-39bc-418f-ba53-331ecff48f97";
 			};
 			name = Release;
 		};
