@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A07CF2DB9CAC02AC343359E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB23F91557A56F2F1B7AC97 /* libPods.a */; };
 		D928A5E21B58E3FA00256CBA /* Adjust_Navbar.js in Resources */ = {isa = PBXBuildFile; fileRef = D928A5E11B58E3FA00256CBA /* Adjust_Navbar.js */; };
 		D928A6181B5B9B5300256CBA /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D928A5FE1B5B9B5200256CBA /* UMSocialLocalizable.strings */; };
 		D928A6191B5B9B5300256CBA /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D928A60C1B5B9B5300256CBA /* libUMSocial_Sdk_4.2.3.a */; };
@@ -36,7 +37,6 @@
 		D9874AAC1B4E7139009BDFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAA1B4E7139009BDFDB /* Main.storyboard */; };
 		D9874AAE1B4E7139009BDFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAD1B4E7139009BDFDB /* Images.xcassets */; };
 		D9874AB11B4E7139009BDFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAF1B4E7139009BDFDB /* LaunchScreen.xib */; };
-		D9874ABD1B4E7139009BDFDB /* WedfairyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874ABC1B4E7139009BDFDB /* WedfairyTests.m */; };
 		D9DBA5D31B5BF261002936B2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA5D21B5BF261002936B2 /* ImageIO.framework */; };
 		D9DBA5DC1B5BF7CD002936B2 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */; };
 		D9DBA5DD1B5BF7CD002936B2 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */; };
@@ -54,17 +54,9 @@
 		D9DBA6401B5BFB45002936B2 /* PgySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA63F1B5BFB45002936B2 /* PgySDK.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D9874AB71B4E7139009BDFDB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9874A951B4E7139009BDFDB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9874A9C1B4E7139009BDFDB;
-			remoteInfo = Wedfairy;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		7EB23F91557A56F2F1B7AC97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF3C717E9EE4A2E12DF8792 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D928A5E11B58E3FA00256CBA /* Adjust_Navbar.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Adjust_Navbar.js; path = JS/Adjust_Navbar.js; sourceTree = "<group>"; };
 		D928A5FF1B5B9B5200256CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		D928A6011B5B9B5200256CBA /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
@@ -114,7 +106,6 @@
 		D9874AAB1B4E7139009BDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9874AAD1B4E7139009BDFDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D9874AB01B4E7139009BDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D9874AB61B4E7139009BDFDB /* WedfairyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WedfairyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9874ABB1B4E7139009BDFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9874ABC1B4E7139009BDFDB /* WedfairyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WedfairyTests.m; sourceTree = "<group>"; };
 		D9DBA5D21B5BF261002936B2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -132,6 +123,7 @@
 		D9DBA63B1B5BFB24002936B2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D9DBA63D1B5BFB29002936B2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D9DBA63F1B5BFB45002936B2 /* PgySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PgySDK.framework; sourceTree = "<group>"; };
+		DE4736AFA7AF2DB831CE4B9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,19 +149,22 @@
 				D928A6191B5B9B5300256CBA /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
 				D9DBA6401B5BFB45002936B2 /* PgySDK.framework in Frameworks */,
 				D928A62A1B5BA44A00256CBA /* libWeChatSDK.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D9874AB31B4E7139009BDFDB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0A07CF2DB9CAC02AC343359E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6D8A9F653BB5FCBD2EBAE50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFF3C717E9EE4A2E12DF8792 /* Pods.debug.xcconfig */,
+				DE4736AFA7AF2DB831CE4B9B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D928A5E01B58DB4900256CBA /* JS File */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +260,8 @@
 				D9874A9F1B4E7139009BDFDB /* Wedfairy */,
 				D9874AB91B4E7139009BDFDB /* WedfairyTests */,
 				D9874A9E1B4E7139009BDFDB /* Products */,
+				C6D8A9F653BB5FCBD2EBAE50 /* Pods */,
+				FB088F21631369EE6534A861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				D9874A9D1B4E7139009BDFDB /* 八音盒.app */,
-				D9874AB61B4E7139009BDFDB /* WedfairyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,6 +342,14 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		FB088F21631369EE6534A861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EB23F91557A56F2F1B7AC97 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,9 +357,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9874AC01B4E7139009BDFDB /* Build configuration list for PBXNativeTarget "Wedfairy" */;
 			buildPhases = (
+				E95AD0A2449CC3067B2CF492 /* Check Pods Manifest.lock */,
 				D9874A991B4E7139009BDFDB /* Sources */,
 				D9874A9A1B4E7139009BDFDB /* Frameworks */,
 				D9874A9B1B4E7139009BDFDB /* Resources */,
+				F1DA0C11D0D4BD012CD5E9F8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,24 +371,6 @@
 			productName = Wedfairy;
 			productReference = D9874A9D1B4E7139009BDFDB /* 八音盒.app */;
 			productType = "com.apple.product-type.application";
-		};
-		D9874AB51B4E7139009BDFDB /* WedfairyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9874AC31B4E7139009BDFDB /* Build configuration list for PBXNativeTarget "WedfairyTests" */;
-			buildPhases = (
-				D9874AB21B4E7139009BDFDB /* Sources */,
-				D9874AB31B4E7139009BDFDB /* Frameworks */,
-				D9874AB41B4E7139009BDFDB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D9874AB81B4E7139009BDFDB /* PBXTargetDependency */,
-			);
-			name = WedfairyTests;
-			productName = WedfairyTests;
-			productReference = D9874AB61B4E7139009BDFDB /* WedfairyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -396,10 +384,6 @@
 					D9874A9C1B4E7139009BDFDB = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = FM4EYX3227;
-					};
-					D9874AB51B4E7139009BDFDB = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = D9874A9C1B4E7139009BDFDB;
 					};
 				};
 			};
@@ -418,7 +402,6 @@
 			projectRoot = "";
 			targets = (
 				D9874A9C1B4E7139009BDFDB /* Wedfairy */,
-				D9874AB51B4E7139009BDFDB /* WedfairyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -453,14 +436,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9874AB41B4E7139009BDFDB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E95AD0A2449CC3067B2CF492 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		F1DA0C11D0D4BD012CD5E9F8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9874A991B4E7139009BDFDB /* Sources */ = {
@@ -474,23 +483,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9874AB21B4E7139009BDFDB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9874ABD1B4E7139009BDFDB /* WedfairyTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D9874AB81B4E7139009BDFDB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D9874A9C1B4E7139009BDFDB /* Wedfairy */;
-			targetProxy = D9874AB71B4E7139009BDFDB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D928A5FE1B5B9B5200256CBA /* UMSocialLocalizable.strings */ = {
@@ -603,6 +596,7 @@
 		};
 		D9874AC11B4E7139009BDFDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF3C717E9EE4A2E12DF8792 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -627,6 +621,7 @@
 		};
 		D9874AC21B4E7139009BDFDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4736AFA7AF2DB831CE4B9B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -649,40 +644,6 @@
 			};
 			name = Release;
 		};
-		D9874AC41B4E7139009BDFDB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WedfairyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wedfairy.app/Wedfairy";
-			};
-			name = Debug;
-		};
-		D9874AC51B4E7139009BDFDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WedfairyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wedfairy.app/Wedfairy";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,15 +661,6 @@
 			buildConfigurations = (
 				D9874AC11B4E7139009BDFDB /* Debug */,
 				D9874AC21B4E7139009BDFDB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D9874AC31B4E7139009BDFDB /* Build configuration list for PBXNativeTarget "WedfairyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9874AC41B4E7139009BDFDB /* Debug */,
-				D9874AC51B4E7139009BDFDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

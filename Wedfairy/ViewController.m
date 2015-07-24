@@ -6,13 +6,15 @@
 //  Copyright (c) 2015 Sbx. All rights reserved.
 //
 
+#import <SIAlertView/SIAlertView.h>
+
 #import "ViewController.h"
 #import "UMSocial.h"
 #import "PreviewViewController.h"
 
 NSString * const MESSAGE_HANDLER = @"previewStory";
 
-@interface ViewController ()<WKNavigationDelegate, WKScriptMessageHandler, UMSocialUIDelegate>
+@interface ViewController ()<WKNavigationDelegate, WKScriptMessageHandler, UMSocialUIDelegate, WKUIDelegate>
 @property (nonatomic, strong) WKWebView *wedfairy_webview;
 @property (atomic) BOOL viewSizeChanged;
 
@@ -40,6 +42,7 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
     
     _wedfairy_webview = [[WKWebView alloc]initWithFrame:CGRectZero configuration:mainWebViewConfiguration];
     _wedfairy_webview.scrollView.bounces = NO;
+    _wedfairy_webview.UIDelegate = self;
     
     [self.view addSubview:_wedfairy_webview];
     
@@ -115,6 +118,36 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - WKUIDelegate
+
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)())completionHandler
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message
+                                                                             message:nil
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"好的"
+                                                        style:UIAlertActionStyleCancel
+                                                      handler:^(UIAlertAction *action) {
+                                                          completionHandler();
+                                                      }]];
+    [self presentViewController:alertController animated:YES completion:^{}];
+}
+
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler
+{
+    NSString *hostString = webView.URL.host;
+    NSString *sender = [NSString stringWithFormat:@"%@", hostString];
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message message:sender preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        completionHandler(YES);
+    }]];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"再想想" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        completionHandler(NO);
+    }]];
+    [self presentViewController:alertController animated:YES completion:^{}];
 }
 
 @end
