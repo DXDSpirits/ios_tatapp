@@ -124,30 +124,33 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
 
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)())completionHandler
 {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message
-                                                                             message:nil
-                                                                      preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"好的"
-                                                        style:UIAlertActionStyleCancel
-                                                      handler:^(UIAlertAction *action) {
-                                                          completionHandler();
-                                                      }]];
-    [self presentViewController:alertController animated:YES completion:^{}];
+    SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:@"错误" andMessage:message];
+    
+    [alertView addButtonWithTitle:@"好的"
+                             type:SIAlertViewButtonTypeDestructive
+                          handler:^(SIAlertView *alert) {
+                              completionHandler();
+                          }];
+    [alertView show];
 }
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler
 {
-    NSString *hostString = webView.URL.host;
-    NSString *sender = [NSString stringWithFormat:@"%@", hostString];
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:message message:sender preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        completionHandler(YES);
-    }]];
-    [alertController addAction:[UIAlertAction actionWithTitle:@"再想想" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        completionHandler(NO);
-    }]];
-    [self presentViewController:alertController animated:YES completion:^{}];
+    SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:@"确认？" andMessage:message];
+    
+    [alertView addButtonWithTitle:@"好的"
+                             type:SIAlertViewButtonTypeDestructive
+                          handler:^(SIAlertView *alert) {
+                              completionHandler(YES);
+                          }];
+    [alertView addButtonWithTitle:@"再想想"
+                             type:SIAlertViewButtonTypeCancel
+                          handler:^(SIAlertView *alert) {
+                              completionHandler(NO);
+                          }];
+    
+    [alertView show];
 }
 
 @end
