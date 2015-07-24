@@ -1,19 +1,19 @@
 //
-//  WedfairyTests.m
-//  WedfairyTests
+//  Wedfairy_Tests.m
+//  Wedfairy Tests
 //
-//  Created by Fei Wen on 7/9/15.
+//  Created by Fei Wen on 7/24/15.
 //  Copyright (c) 2015 Sbx. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface WedfairyTests : XCTestCase
+@interface Wedfairy_Tests : XCTestCase
 
 @end
 
-@implementation WedfairyTests
+@implementation Wedfairy_Tests
 
 - (void)setUp {
     [super setUp];
