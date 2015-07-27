@@ -33,10 +33,11 @@
 		D928A63D1B5BAC0B00256CBA /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D928A63C1B5BAC0B00256CBA /* PreviewViewController.m */; };
 		D9874AA31B4E7139009BDFDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874AA21B4E7139009BDFDB /* main.m */; };
 		D9874AA61B4E7139009BDFDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874AA51B4E7139009BDFDB /* AppDelegate.m */; };
-		D9874AA91B4E7139009BDFDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874AA81B4E7139009BDFDB /* ViewController.m */; };
+		D9874AA91B4E7139009BDFDB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874AA81B4E7139009BDFDB /* MainViewController.m */; };
 		D9874AAC1B4E7139009BDFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAA1B4E7139009BDFDB /* Main.storyboard */; };
 		D9874AAE1B4E7139009BDFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAD1B4E7139009BDFDB /* Images.xcassets */; };
 		D9874AB11B4E7139009BDFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAF1B4E7139009BDFDB /* LaunchScreen.xib */; };
+		D9A343841B6267C900E1EB7A /* Wedfairy_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A343831B6267C900E1EB7A /* Wedfairy_Tests.m */; };
 		D9DBA5D31B5BF261002936B2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA5D21B5BF261002936B2 /* ImageIO.framework */; };
 		D9DBA5DC1B5BF7CD002936B2 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */; };
 		D9DBA5DD1B5BF7CD002936B2 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */; };
@@ -53,6 +54,16 @@
 		D9DBA63E1B5BFB29002936B2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA63D1B5BFB29002936B2 /* AVFoundation.framework */; };
 		D9DBA6401B5BFB45002936B2 /* PgySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA63F1B5BFB45002936B2 /* PgySDK.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9A343851B6267C900E1EB7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9874A951B4E7139009BDFDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9874A9C1B4E7139009BDFDB;
+			remoteInfo = Wedfairy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7EB23F91557A56F2F1B7AC97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,13 +112,14 @@
 		D9874AA21B4E7139009BDFDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9874AA41B4E7139009BDFDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9874AA51B4E7139009BDFDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D9874AA71B4E7139009BDFDB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D9874AA81B4E7139009BDFDB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9874AA71B4E7139009BDFDB /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D9874AA81B4E7139009BDFDB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D9874AAB1B4E7139009BDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9874AAD1B4E7139009BDFDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D9874AB01B4E7139009BDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D9874ABB1B4E7139009BDFDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9874ABC1B4E7139009BDFDB /* WedfairyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WedfairyTests.m; sourceTree = "<group>"; };
+		D9A3437F1B6267C900E1EB7A /* Wedfairy Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wedfairy Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9A343821B6267C900E1EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A343831B6267C900E1EB7A /* Wedfairy_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wedfairy_Tests.m; sourceTree = "<group>"; };
 		D9DBA5D21B5BF261002936B2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
 		D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
@@ -150,6 +162,13 @@
 				D9DBA6401B5BFB45002936B2 /* PgySDK.framework in Frameworks */,
 				D928A62A1B5BA44A00256CBA /* libWeChatSDK.a in Frameworks */,
 				0A07CF2DB9CAC02AC343359E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3437C1B6267C900E1EB7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				D9874A9F1B4E7139009BDFDB /* Wedfairy */,
-				D9874AB91B4E7139009BDFDB /* WedfairyTests */,
+				D9A343801B6267C900E1EB7A /* Wedfairy Tests */,
 				D9874A9E1B4E7139009BDFDB /* Products */,
 				C6D8A9F653BB5FCBD2EBAE50 /* Pods */,
 				FB088F21631369EE6534A861 /* Frameworks */,
@@ -269,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				D9874A9D1B4E7139009BDFDB /* 八音盒.app */,
+				D9A3437F1B6267C900E1EB7A /* Wedfairy Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,8 +298,8 @@
 			children = (
 				D9874AA41B4E7139009BDFDB /* AppDelegate.h */,
 				D9874AA51B4E7139009BDFDB /* AppDelegate.m */,
-				D9874AA71B4E7139009BDFDB /* ViewController.h */,
-				D9874AA81B4E7139009BDFDB /* ViewController.m */,
+				D9874AA71B4E7139009BDFDB /* MainViewController.h */,
+				D9874AA81B4E7139009BDFDB /* MainViewController.m */,
 				D9874AAA1B4E7139009BDFDB /* Main.storyboard */,
 				D928A63B1B5BAC0B00256CBA /* PreviewViewController.h */,
 				D928A63C1B5BAC0B00256CBA /* PreviewViewController.m */,
@@ -302,19 +322,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D9874AB91B4E7139009BDFDB /* WedfairyTests */ = {
+		D9A343801B6267C900E1EB7A /* Wedfairy Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D9874ABC1B4E7139009BDFDB /* WedfairyTests.m */,
-				D9874ABA1B4E7139009BDFDB /* Supporting Files */,
+				D9A343831B6267C900E1EB7A /* Wedfairy_Tests.m */,
+				D9A343811B6267C900E1EB7A /* Supporting Files */,
 			);
-			path = WedfairyTests;
+			path = "Wedfairy Tests";
 			sourceTree = "<group>";
 		};
-		D9874ABA1B4E7139009BDFDB /* Supporting Files */ = {
+		D9A343811B6267C900E1EB7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D9874ABB1B4E7139009BDFDB /* Info.plist */,
+				D9A343821B6267C900E1EB7A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -372,6 +392,24 @@
 			productReference = D9874A9D1B4E7139009BDFDB /* 八音盒.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D9A3437E1B6267C900E1EB7A /* Wedfairy Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9A343871B6267C900E1EB7A /* Build configuration list for PBXNativeTarget "Wedfairy Tests" */;
+			buildPhases = (
+				D9A3437B1B6267C900E1EB7A /* Sources */,
+				D9A3437C1B6267C900E1EB7A /* Frameworks */,
+				D9A3437D1B6267C900E1EB7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9A343861B6267C900E1EB7A /* PBXTargetDependency */,
+			);
+			name = "Wedfairy Tests";
+			productName = "Wedfairy Tests";
+			productReference = D9A3437F1B6267C900E1EB7A /* Wedfairy Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -384,6 +422,10 @@
 					D9874A9C1B4E7139009BDFDB = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = FM4EYX3227;
+					};
+					D9A3437E1B6267C900E1EB7A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D9874A9C1B4E7139009BDFDB;
 					};
 				};
 			};
@@ -402,6 +444,7 @@
 			projectRoot = "";
 			targets = (
 				D9874A9C1B4E7139009BDFDB /* Wedfairy */,
+				D9A3437E1B6267C900E1EB7A /* Wedfairy Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -433,6 +476,13 @@
 				D9DBA5DE1B5BF7CD002936B2 /* Icon-60@3x.png in Resources */,
 				D9DBA5E11B5BF7CE002936B2 /* iTunesArtwork.png in Resources */,
 				D928A61F1B5B9B5300256CBA /* UMSLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9A3437D1B6267C900E1EB7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,14 +526,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9874AA91B4E7139009BDFDB /* ViewController.m in Sources */,
+				D9874AA91B4E7139009BDFDB /* MainViewController.m in Sources */,
 				D9874AA61B4E7139009BDFDB /* AppDelegate.m in Sources */,
 				D9874AA31B4E7139009BDFDB /* main.m in Sources */,
 				D928A63D1B5BAC0B00256CBA /* PreviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9A3437B1B6267C900E1EB7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A343841B6267C900E1EB7A /* Wedfairy_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9A343861B6267C900E1EB7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9874A9C1B4E7139009BDFDB /* Wedfairy */;
+			targetProxy = D9A343851B6267C900E1EB7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D928A5FE1B5B9B5200256CBA /* UMSocialLocalizable.strings */ = {
@@ -624,7 +690,7 @@
 			baseConfigurationReference = DE4736AFA7AF2DB831CE4B9B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fei Wen (FM4EYX3227)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wedfairy/PgySDK/demo/PgySDKDemo",
@@ -640,7 +706,43 @@
 					"$(PROJECT_DIR)/Wedfairy/UMSocial_Sdk_4.2.3/Wechat",
 				);
 				PRODUCT_NAME = "八音盒";
-				PROVISIONING_PROFILE = "01af453e-39bc-418f-ba53-331ecff48f97";
+				PROVISIONING_PROFILE = "89afa284-dd71-4bb7-95c4-a54e0a150aaa";
+			};
+			name = Release;
+		};
+		D9A343881B6267C900E1EB7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wedfairy Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/八音盒.app/八音盒";
+			};
+			name = Debug;
+		};
+		D9A343891B6267C900E1EB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wedfairy Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/八音盒.app/八音盒";
 			};
 			name = Release;
 		};
@@ -661,6 +763,15 @@
 			buildConfigurations = (
 				D9874AC11B4E7139009BDFDB /* Debug */,
 				D9874AC21B4E7139009BDFDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9A343871B6267C900E1EB7A /* Build configuration list for PBXNativeTarget "Wedfairy Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9A343881B6267C900E1EB7A /* Debug */,
+				D9A343891B6267C900E1EB7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

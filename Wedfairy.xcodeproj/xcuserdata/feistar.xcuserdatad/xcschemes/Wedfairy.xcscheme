@@ -34,6 +34,20 @@
                ReferencedContainer = "container:Wedfairy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9A3437E1B6267C900E1EB7A"
+               BuildableName = "Wedfairy Tests.xctest"
+               BlueprintName = "Wedfairy Tests"
+               ReferencedContainer = "container:Wedfairy.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "D9874AB51B4E7139009BDFDB"
                BuildableName = "WedfairyTests.xctest"
                BlueprintName = "WedfairyTests"
+               ReferencedContainer = "container:Wedfairy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9A3437E1B6267C900E1EB7A"
+               BuildableName = "Wedfairy Tests.xctest"
+               BlueprintName = "Wedfairy Tests"
                ReferencedContainer = "container:Wedfairy.xcodeproj">
             </BuildableReference>
          </TestableReference>

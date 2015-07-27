@@ -8,19 +8,19 @@
 
 #import <SIAlertView/SIAlertView.h>
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "UMSocial.h"
 #import "PreviewViewController.h"
 
 NSString * const MESSAGE_HANDLER = @"previewStory";
 
-@interface ViewController ()<WKNavigationDelegate, WKScriptMessageHandler, UMSocialUIDelegate, WKUIDelegate>
+@interface MainViewController ()<WKNavigationDelegate, WKScriptMessageHandler, UMSocialUIDelegate, WKUIDelegate>
 @property (nonatomic, strong) WKWebView *wedfairy_webview;
 @property (atomic) BOOL viewSizeChanged;
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

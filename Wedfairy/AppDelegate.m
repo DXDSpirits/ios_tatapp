@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "UMSocial.h"
 #import "UMSocialWechatHandler.h"
+
 #import <PgySDK/PgyManager.h>
 
 @interface AppDelegate ()
@@ -22,10 +23,10 @@
     // Override point for customization after application launch.
     
     [UMSocialData setAppKey:@"55ab622967e58e5411005fde"];
-    [UMSocialWechatHandler setWXAppId:@"wxd930ea5d5a258f4f" appSecret:@"db426a9829e4b49a0dcac7b4162da6b6" url:@"http://www.wedfairy.com"];
+    [UMSocialWechatHandler setWXAppId:@"wx3e57b873d623a4a3" appSecret:@"7b4516c6814fce606faefd3393179a30" url:@"http://www.wedfairy.com"];
     [[PgyManager sharedPgyManager] startManagerWithAppId:@"4c1f91082f65e0f49425309e5bdf88bf"];
     
-    [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToQQ,UMShareToQzone,UMShareToWechatSession,UMShareToWechatTimeline]];
+    [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToWechatSession,UMShareToWechatTimeline]];
     
     
     return YES;

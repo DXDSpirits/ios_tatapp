@@ -19,7 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:241/255.0f green:95/255.0f blue:92/255.0f alpha:1.0];
+    self.navigationController.navigationBar.topItem.title = @"";
+    [self.navigationController.navigationBar setFrame:CGRectMake(0, 0, 320, 44)];
+    
+    
     WKWebViewConfiguration *mainWebViewConfiguration = [[WKWebViewConfiguration alloc] init];
     [mainWebViewConfiguration.userContentController addScriptMessageHandler:self name:@"shareStory"];
     
@@ -87,6 +91,10 @@
                                            delegate:self];
 
     }
+}
+
+- (BOOL)prefersStatusBarHidden{
+    return YES;
 }
 
 

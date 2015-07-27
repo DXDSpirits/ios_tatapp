@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0966C85897993D5512CCDC76D992774A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060A050E61E53E5DA04B7230EF0D7074 /* Foundation.framework */; };
-		2D78B659A5C7FB65A7E323D2DD4BDCB9 /* SIAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F812D3263CDB9810A5590501A719AA /* SIAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D78B659A5C7FB65A7E323D2DD4BDCB9 /* SIAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F812D3263CDB9810A5590501A719AA /* SIAlertView-umbrella.h */; };
 		5370C4EBFE13629D4153EE8F50D6D2D3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0062BC6B55F07115B0D7CF123E456BE9 /* QuartzCore.framework */; };
 		5460A3F5AEC2CC07BD2AC32BAE8D16E9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF3D5C7AE9F6232B70BDDB07EFB8447 /* Pods-dummy.m */; };
 		895F70C6E8AF30A104CC11F92374BE07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060A050E61E53E5DA04B7230EF0D7074 /* Foundation.framework */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		626E0587149D8704ED3DAAEA43B55D21 /* PBXContainerItemProxy */ = {
+		F624637D818C1EC2B7D8E589B4C604F4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -178,8 +178,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D78B659A5C7FB65A7E323D2DD4BDCB9 /* SIAlertView-umbrella.h in Headers */,
 				8C8886E02F4A70AB52817580E443A38D /* SIAlertView.h in Headers */,
+				2D78B659A5C7FB65A7E323D2DD4BDCB9 /* SIAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +196,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C3B470990E4CC8BF2D47E31EF307F6BD /* PBXTargetDependency */,
+				6875686ABFE00A1F3EC5180CC00B4F50 /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -268,11 +268,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C3B470990E4CC8BF2D47E31EF307F6BD /* PBXTargetDependency */ = {
+		6875686ABFE00A1F3EC5180CC00B4F50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SIAlertView;
 			target = 5AC31CC8E60BEC192E6AB2BD64247DEC /* SIAlertView */;
-			targetProxy = 626E0587149D8704ED3DAAEA43B55D21 /* PBXContainerItemProxy */;
+			targetProxy = F624637D818C1EC2B7D8E589B4C604F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
