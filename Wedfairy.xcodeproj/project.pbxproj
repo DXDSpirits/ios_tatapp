@@ -38,6 +38,9 @@
 		D9874AAE1B4E7139009BDFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAD1B4E7139009BDFDB /* Images.xcassets */; };
 		D9874AB11B4E7139009BDFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAF1B4E7139009BDFDB /* LaunchScreen.xib */; };
 		D9A343841B6267C900E1EB7A /* Wedfairy_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A343831B6267C900E1EB7A /* Wedfairy_Tests.m */; };
+		D9A343DF1B67834200E1EB7A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A343DE1B67834200E1EB7A /* libWeChatSDK.a */; };
+		D9A343E41B6784E700E1EB7A /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A343E31B6784E700E1EB7A /* libsqlite3.0.dylib */; };
+		D9A343E71B67B65F00E1EB7A /* WedfairyUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A343E61B67B65F00E1EB7A /* WedfairyUserDefaults.m */; };
 		D9DBA5D31B5BF261002936B2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA5D21B5BF261002936B2 /* ImageIO.framework */; };
 		D9DBA5DC1B5BF7CD002936B2 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */; };
 		D9DBA5DD1B5BF7CD002936B2 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */; };
@@ -120,6 +123,12 @@
 		D9A3437F1B6267C900E1EB7A /* Wedfairy Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wedfairy Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A343821B6267C900E1EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9A343831B6267C900E1EB7A /* Wedfairy_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wedfairy_Tests.m; sourceTree = "<group>"; };
+		D9A343DE1B67834200E1EB7A /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		D9A343E11B67836D00E1EB7A /* WXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		D9A343E21B67836D00E1EB7A /* WXApiObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		D9A343E31B6784E700E1EB7A /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		D9A343E51B67B65F00E1EB7A /* WedfairyUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WedfairyUserDefaults.h; sourceTree = "<group>"; };
+		D9A343E61B67B65F00E1EB7A /* WedfairyUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WedfairyUserDefaults.m; sourceTree = "<group>"; };
 		D9DBA5D21B5BF261002936B2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
 		D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
@@ -143,13 +152,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A343E41B6784E700E1EB7A /* libsqlite3.0.dylib in Frameworks */,
+				D928A63A1B5BAAD400256CBA /* libz.dylib in Frameworks */,
 				D9DBA63E1B5BFB29002936B2 /* AVFoundation.framework in Frameworks */,
 				D9DBA63C1B5BFB24002936B2 /* AudioToolbox.framework in Frameworks */,
 				D9DBA63A1B5BFB1D002936B2 /* CoreMotion.framework in Frameworks */,
 				D9DBA6381B5BFB0D002936B2 /* SceneKit.framework in Frameworks */,
 				D9DBA6361B5BFAFB002936B2 /* OpenGLES.framework in Frameworks */,
 				D9DBA5D31B5BF261002936B2 /* ImageIO.framework in Frameworks */,
-				D928A63A1B5BAAD400256CBA /* libz.dylib in Frameworks */,
 				D928A6381B5BAACF00256CBA /* libstdc++.dylib in Frameworks */,
 				D928A6361B5BAAC900256CBA /* CoreTelephony.framework in Frameworks */,
 				D928A6341B5BAAC400256CBA /* libsqlite3.dylib in Frameworks */,
@@ -157,6 +167,7 @@
 				D928A6301B5BAAB200256CBA /* SystemConfiguration.framework in Frameworks */,
 				D928A62E1B5BAAAB00256CBA /* libiconv.dylib in Frameworks */,
 				D928A62C1B5BAAA400256CBA /* Security.framework in Frameworks */,
+				D9A343DF1B67834200E1EB7A /* libWeChatSDK.a in Frameworks */,
 				D928A6291B5BA44A00256CBA /* libSocialWechat.a in Frameworks */,
 				D928A6191B5B9B5300256CBA /* libUMSocial_Sdk_4.2.3.a in Frameworks */,
 				D9DBA6401B5BFB45002936B2 /* PgySDK.framework in Frameworks */,
@@ -195,6 +206,7 @@
 		D928A5FC1B5B9B4300256CBA /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D9A343E01B67836300E1EB7A /* Wechat */,
 				D9DBA63D1B5BFB29002936B2 /* AVFoundation.framework */,
 				D9DBA63B1B5BFB24002936B2 /* AudioToolbox.framework */,
 				D9DBA6391B5BFB1D002936B2 /* CoreMotion.framework */,
@@ -308,6 +320,8 @@
 				D928A5FC1B5B9B4300256CBA /* Library */,
 				D928A5E01B58DB4900256CBA /* JS File */,
 				D9874AA01B4E7139009BDFDB /* Supporting Files */,
+				D9A343E51B67B65F00E1EB7A /* WedfairyUserDefaults.h */,
+				D9A343E61B67B65F00E1EB7A /* WedfairyUserDefaults.m */,
 			);
 			path = Wedfairy;
 			sourceTree = "<group>";
@@ -339,6 +353,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D9A343E01B67836300E1EB7A /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				D9A343E11B67836D00E1EB7A /* WXApi.h */,
+				D9A343E21B67836D00E1EB7A /* WXApiObject.h */,
+			);
+			name = Wechat;
+			sourceTree = "<group>";
+		};
 		D9DBA5D41B5BF7CD002936B2 /* wedfairy icon set */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +388,8 @@
 		FB088F21631369EE6534A861 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D9A343E31B6784E700E1EB7A /* libsqlite3.0.dylib */,
+				D9A343DE1B67834200E1EB7A /* libWeChatSDK.a */,
 				7EB23F91557A56F2F1B7AC97 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -528,6 +553,7 @@
 			files = (
 				D9874AA91B4E7139009BDFDB /* MainViewController.m in Sources */,
 				D9874AA61B4E7139009BDFDB /* AppDelegate.m in Sources */,
+				D9A343E71B67B65F00E1EB7A /* WedfairyUserDefaults.m in Sources */,
 				D9874AA31B4E7139009BDFDB /* main.m in Sources */,
 				D928A63D1B5BAC0B00256CBA /* PreviewViewController.m in Sources */,
 			);
@@ -679,6 +705,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wedfairy/UMSocial_Sdk_4.2.3",
 					"$(PROJECT_DIR)/Wedfairy/UMSocial_Sdk_4.2.3/Wechat",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "八音盒";
 				PROVISIONING_PROFILE = "361ba688-89ec-4f83-8709-272694598c1c";
@@ -704,9 +731,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wedfairy/UMSocial_Sdk_4.2.3",
 					"$(PROJECT_DIR)/Wedfairy/UMSocial_Sdk_4.2.3/Wechat",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "八音盒";
-				PROVISIONING_PROFILE = "89afa284-dd71-4bb7-95c4-a54e0a150aaa";
+				PROVISIONING_PROFILE = "ec0f254b-19a6-4a32-89d8-afc8a9c70f76";
 			};
 			name = Release;
 		};

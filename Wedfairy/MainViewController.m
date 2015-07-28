@@ -7,16 +7,20 @@
 //
 
 #import <SIAlertView/SIAlertView.h>
+#import <Bolts/Bolts.h>
 
+#import "WedfairyUserDefaults.h"
 #import "MainViewController.h"
 #import "UMSocial.h"
 #import "PreviewViewController.h"
 
 NSString * const MESSAGE_HANDLER = @"previewStory";
+NSString * const WECHAT_MESSAGE = @"wechatLogin";
 
 @interface MainViewController ()<WKNavigationDelegate, WKScriptMessageHandler, UMSocialUIDelegate, WKUIDelegate>
 @property (nonatomic, strong) WKWebView *wedfairy_webview;
 @property (atomic) BOOL viewSizeChanged;
+@property (nonatomic, strong) NSURL *wechat_auth_url;
 
 @end
 
@@ -39,6 +43,7 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
     
     [mainWebViewConfiguration.userContentController addUserScript:adjustNavScript];
     [mainWebViewConfiguration.userContentController addScriptMessageHandler:self name:MESSAGE_HANDLER];
+    [mainWebViewConfiguration.userContentController addScriptMessageHandler:self name:WECHAT_MESSAGE];
     
     _wedfairy_webview = [[WKWebView alloc]initWithFrame:CGRectZero configuration:mainWebViewConfiguration];
     _wedfairy_webview.scrollView.bounces = NO;
@@ -65,10 +70,10 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
                                                                          constant:0];
     [self.view addConstraint:heightConstraint];
     
-    NSURL *url = [NSURL URLWithString:@"http://compose.wedfairy.com/"];
+    NSURL *url = [NSURL URLWithString:@"http://compose.wedfairy.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
     [_wedfairy_webview loadRequest:request];
+    
     self.viewSizeChanged = NO;
 }
 
@@ -83,6 +88,15 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
     }
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    
+    if(![WedfairyUserDefaults standardUserDefaults].wechat_auth_url){
+        NSURL *url = [NSURL URLWithString:[WedfairyUserDefaults standardUserDefaults].wechat_auth_url];
+        NSURLRequest *wechat_request = [NSURLRequest requestWithURL:url];
+        [_wedfairy_webview loadRequest:wechat_request];
+        [WedfairyUserDefaults standardUserDefaults].wechat_auth_url = nil;
+    }
+}
 
 -(BOOL)prefersStatusBarHidden{
     return YES;
@@ -91,17 +105,25 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
  
 - (void)userContentController:(WKUserContentController*)userContentController
       didReceiveScriptMessage:(WKScriptMessage*)message {
-    //NSLog(@"Message: %@", message.body);
     if([message.name isEqualToString:MESSAGE_HANDLER]) {
         // The message.body contains the object being posted back
         NSLog(@"Message received.");
         NSDictionary *story_dict = message.body;
         PreviewViewController *pVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PreviewViewController"];
-        
         pVC.preview_url = [story_dict objectForKey:@"storyUrl"];
-        
         [self.navigationController pushViewController:pVC animated:YES];
-        
+    }
+    else if ([message.name isEqualToString:WECHAT_MESSAGE]){
+        NSDictionary *msg_dict = message.body;
+        NSString *state = [msg_dict objectForKey:@"state"];
+    
+        SendAuthReq *req = [[SendAuthReq alloc] init];
+        req.scope = @"snsapi_userinfo";
+        req.state = state;
+        [WXApi sendReq:req];
+    }
+    else{
+        NSLog(@"Other messages");
     }
 }
 
@@ -125,18 +147,17 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)())completionHandler
 {
     SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:@"错误" andMessage:message];
-    
     [alertView addButtonWithTitle:@"好的"
                              type:SIAlertViewButtonTypeDestructive
                           handler:^(SIAlertView *alert) {
                               completionHandler();
                           }];
+    
     [alertView show];
 }
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler
 {
-    
     SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:@"确认？" andMessage:message];
     
     [alertView addButtonWithTitle:@"好的"
@@ -144,13 +165,20 @@ NSString * const MESSAGE_HANDLER = @"previewStory";
                           handler:^(SIAlertView *alert) {
                               completionHandler(YES);
                           }];
+    
     [alertView addButtonWithTitle:@"再想想"
                              type:SIAlertViewButtonTypeCancel
                           handler:^(SIAlertView *alert) {
                               completionHandler(NO);
                           }];
-    
+
     [alertView show];
+}
+
+
+-(void)loadNewPage : (NSURL *)url{
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [_wedfairy_webview loadRequest:request];
 }
 
 @end

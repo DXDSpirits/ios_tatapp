@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WXApi.h"
 
 @import WebKit;
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController<WXApiDelegate>
+
+-(void)loadNewPage : (NSURL *)url;
 
 
 @end
