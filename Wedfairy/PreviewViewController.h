@@ -13,4 +13,11 @@
 
 @property (strong, nonatomic) NSString *preview_url;
 
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
+@property (weak, nonatomic) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UIButton *refreshBtn;
+
+- (IBAction)refreshBtnPressed:(id)sender;
+
+
 @end

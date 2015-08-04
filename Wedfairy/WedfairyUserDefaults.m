@@ -12,6 +12,8 @@
 
 @dynamic wechat_auth_url;
 @dynamic back_from_wechat_login;
+@dynamic will_go_wechat_login;
+@dynamic first_time_use;
 
 + (instancetype)standardUserDefaults {
     static dispatch_once_t onceToken;
@@ -25,7 +27,10 @@
 
 - (NSDictionary *)setupDefaults {
     return @{@"wechat_auth_url" : @"",
-             @"back_from_wechat_login" : @(NO)};
+             @"back_from_wechat_login" : @(NO),
+             @"_will_go_wechat_login": @(NO),
+             @"first_time_use" : @(YES),
+             @"user_cancelled" : @(NO)};
 }
 
 

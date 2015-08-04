@@ -14,7 +14,13 @@
 @interface MainViewController : UIViewController<WXApiDelegate>
 
 -(void)loadNewPage : (NSURL *)url;
+-(NSURL *)fetchCurrentPage;
 
+@property (weak, nonatomic) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UIButton *refreshBtn;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
+
+- (IBAction)refreshBtnPressed:(id)sender;
 
 @end
 

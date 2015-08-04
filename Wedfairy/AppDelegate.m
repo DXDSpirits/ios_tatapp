@@ -16,6 +16,7 @@
 @interface AppDelegate ()
 
 @property (nonatomic) UIViewController *lastVC;
+@property (nonatomic, retain) NSURL *currentURL;
 
 @end
 
@@ -32,6 +33,7 @@
     
     [UMSocialConfig hiddenNotInstallPlatforms:@[UMShareToWechatSession,UMShareToWechatTimeline]];
     [WXApi registerApp:@"wx3e57b873d623a4a3"];
+    // Override point for customization after application launch.
     
     return YES;
 }
@@ -61,8 +63,9 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     _lastVC = ((UINavigationController*)self.window.rootViewController).visibleViewController;
-    if ([_lastVC isKindOfClass: [MainViewController class]]) {
+    if ([_lastVC isKindOfClass: [MainViewController class]] && [WedfairyUserDefaults standardUserDefaults].will_go_wechat_login){
         [(MainViewController *)_lastVC loadNewPage:[NSURL URLWithString:@"about:blank"]];
+        [WedfairyUserDefaults standardUserDefaults].will_go_wechat_login = NO;
     }
 
 }
@@ -76,13 +79,13 @@
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     if ([_lastVC isKindOfClass: [MainViewController class]]) {
         NSString *url_string = [WedfairyUserDefaults standardUserDefaults].wechat_auth_url;
-        if (url_string && [WedfairyUserDefaults standardUserDefaults].back_from_wechat_login) {
-            [(MainViewController *)_lastVC loadNewPage:[NSURL URLWithString:[WedfairyUserDefaults standardUserDefaults].wechat_auth_url]];
+        if (url_string && ([WedfairyUserDefaults standardUserDefaults].back_from_wechat_login || [WedfairyUserDefaults standardUserDefaults].user_cancelled)) {
+            [(MainViewController *)_lastVC loadNewPage:[NSURL URLWithString:url_string]];
             [WedfairyUserDefaults standardUserDefaults].wechat_auth_url = nil;
             [WedfairyUserDefaults standardUserDefaults].back_from_wechat_login = NO;
+            [WedfairyUserDefaults standardUserDefaults].user_cancelled = NO;
         }
     }
-
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -97,9 +100,15 @@
 }
 
 -(void) onResp:(SendAuthResp *)resp{
+    NSLog(@"Response: %@, %d", resp, resp.errCode);
+
     if (resp.errCode == 0) {
         [WedfairyUserDefaults standardUserDefaults].wechat_auth_url = [[NSString stringWithFormat:@"http://api.wedfairy.com/api/users/wechat-auth/?code=%@&state=hybrid|ios", resp.code] stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionAllowLossy];
         [WedfairyUserDefaults standardUserDefaults].back_from_wechat_login = YES;
+    }
+    else if(resp.errCode == -2){
+        [WedfairyUserDefaults standardUserDefaults].user_cancelled = YES;
+        [WedfairyUserDefaults standardUserDefaults].wechat_auth_url = @"http://compose.wedfairy.com/";
     }
 }
 

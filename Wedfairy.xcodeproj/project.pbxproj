@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A07CF2DB9CAC02AC343359E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB23F91557A56F2F1B7AC97 /* libPods.a */; };
+		D90D2EEE1B6F6BCB0084ADB5 /* DeviceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D2EED1B6F6BCB0084ADB5 /* DeviceDetector.m */; };
+		D91255661B6B769800CBDBCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91255651B6B769800CBDBCF /* Images.xcassets */; };
 		D928A5E21B58E3FA00256CBA /* Adjust_Navbar.js in Resources */ = {isa = PBXBuildFile; fileRef = D928A5E11B58E3FA00256CBA /* Adjust_Navbar.js */; };
 		D928A6181B5B9B5300256CBA /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D928A5FE1B5B9B5200256CBA /* UMSocialLocalizable.strings */; };
 		D928A6191B5B9B5300256CBA /* libUMSocial_Sdk_4.2.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D928A60C1B5B9B5300256CBA /* libUMSocial_Sdk_4.2.3.a */; };
@@ -35,21 +37,12 @@
 		D9874AA61B4E7139009BDFDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874AA51B4E7139009BDFDB /* AppDelegate.m */; };
 		D9874AA91B4E7139009BDFDB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9874AA81B4E7139009BDFDB /* MainViewController.m */; };
 		D9874AAC1B4E7139009BDFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAA1B4E7139009BDFDB /* Main.storyboard */; };
-		D9874AAE1B4E7139009BDFDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAD1B4E7139009BDFDB /* Images.xcassets */; };
-		D9874AB11B4E7139009BDFDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9874AAF1B4E7139009BDFDB /* LaunchScreen.xib */; };
+		D9A2E81C1B6F7A98003D8A4A /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2E81B1B6F7A98003D8A4A /* GuideViewController.m */; };
 		D9A343841B6267C900E1EB7A /* Wedfairy_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A343831B6267C900E1EB7A /* Wedfairy_Tests.m */; };
 		D9A343DF1B67834200E1EB7A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A343DE1B67834200E1EB7A /* libWeChatSDK.a */; };
 		D9A343E41B6784E700E1EB7A /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A343E31B6784E700E1EB7A /* libsqlite3.0.dylib */; };
 		D9A343E71B67B65F00E1EB7A /* WedfairyUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A343E61B67B65F00E1EB7A /* WedfairyUserDefaults.m */; };
 		D9DBA5D31B5BF261002936B2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA5D21B5BF261002936B2 /* ImageIO.framework */; };
-		D9DBA5DC1B5BF7CD002936B2 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */; };
-		D9DBA5DD1B5BF7CD002936B2 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */; };
-		D9DBA5DE1B5BF7CD002936B2 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D71B5BF7CD002936B2 /* Icon-60@3x.png */; };
-		D9DBA5DF1B5BF7CD002936B2 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D81B5BF7CD002936B2 /* Icon-Small@2x.png */; };
-		D9DBA5E01B5BF7CD002936B2 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5D91B5BF7CD002936B2 /* Icon-Small@3x.png */; };
-		D9DBA5E11B5BF7CE002936B2 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5DA1B5BF7CD002936B2 /* iTunesArtwork.png */; };
-		D9DBA5E21B5BF7CE002936B2 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5DB1B5BF7CD002936B2 /* iTunesArtwork@2x.png */; };
-		D9DBA5E51B5BF9C9002936B2 /* wedfairy_red_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9DBA5E41B5BF9C9002936B2 /* wedfairy_red_logo.jpg */; };
 		D9DBA6361B5BFAFB002936B2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA6351B5BFAFB002936B2 /* OpenGLES.framework */; };
 		D9DBA6381B5BFB0D002936B2 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA6371B5BFB0D002936B2 /* SceneKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D9DBA63A1B5BFB1D002936B2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBA6391B5BFB1D002936B2 /* CoreMotion.framework */; };
@@ -71,6 +64,9 @@
 /* Begin PBXFileReference section */
 		7EB23F91557A56F2F1B7AC97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF3C717E9EE4A2E12DF8792 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D90D2EEC1B6F6BCB0084ADB5 /* DeviceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetector.h; sourceTree = "<group>"; };
+		D90D2EED1B6F6BCB0084ADB5 /* DeviceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetector.m; sourceTree = "<group>"; };
+		D91255651B6B769800CBDBCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D928A5E11B58E3FA00256CBA /* Adjust_Navbar.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Adjust_Navbar.js; path = JS/Adjust_Navbar.js; sourceTree = "<group>"; };
 		D928A5FF1B5B9B5200256CBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		D928A6011B5B9B5200256CBA /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
@@ -118,8 +114,8 @@
 		D9874AA71B4E7139009BDFDB /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D9874AA81B4E7139009BDFDB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D9874AAB1B4E7139009BDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D9874AAD1B4E7139009BDFDB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D9874AB01B4E7139009BDFDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D9A2E81A1B6F7A98003D8A4A /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		D9A2E81B1B6F7A98003D8A4A /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		D9A3437F1B6267C900E1EB7A /* Wedfairy Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wedfairy Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A343821B6267C900E1EB7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9A343831B6267C900E1EB7A /* Wedfairy_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wedfairy_Tests.m; sourceTree = "<group>"; };
@@ -130,14 +126,6 @@
 		D9A343E51B67B65F00E1EB7A /* WedfairyUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WedfairyUserDefaults.h; sourceTree = "<group>"; };
 		D9A343E61B67B65F00E1EB7A /* WedfairyUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WedfairyUserDefaults.m; sourceTree = "<group>"; };
 		D9DBA5D21B5BF261002936B2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
-		D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
-		D9DBA5D71B5BF7CD002936B2 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
-		D9DBA5D81B5BF7CD002936B2 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		D9DBA5D91B5BF7CD002936B2 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
-		D9DBA5DA1B5BF7CD002936B2 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		D9DBA5DB1B5BF7CD002936B2 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		D9DBA5E41B5BF9C9002936B2 /* wedfairy_red_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wedfairy_red_logo.jpg; sourceTree = "<group>"; };
 		D9DBA6351B5BFAFB002936B2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D9DBA6371B5BFB0D002936B2 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		D9DBA6391B5BFB1D002936B2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -308,20 +296,13 @@
 		D9874A9F1B4E7139009BDFDB /* Wedfairy */ = {
 			isa = PBXGroup;
 			children = (
-				D9874AA41B4E7139009BDFDB /* AppDelegate.h */,
-				D9874AA51B4E7139009BDFDB /* AppDelegate.m */,
-				D9874AA71B4E7139009BDFDB /* MainViewController.h */,
-				D9874AA81B4E7139009BDFDB /* MainViewController.m */,
-				D9874AAA1B4E7139009BDFDB /* Main.storyboard */,
-				D928A63B1B5BAC0B00256CBA /* PreviewViewController.h */,
-				D928A63C1B5BAC0B00256CBA /* PreviewViewController.m */,
-				D9874AAD1B4E7139009BDFDB /* Images.xcassets */,
-				D9874AAF1B4E7139009BDFDB /* LaunchScreen.xib */,
+				D91255651B6B769800CBDBCF /* Images.xcassets */,
+				D9A343ED1B689EED00E1EB7A /* View */,
+				D9A343EC1B689EDB00E1EB7A /* ViewController */,
+				D9A343EB1B689ECB00E1EB7A /* App */,
 				D928A5FC1B5B9B4300256CBA /* Library */,
 				D928A5E01B58DB4900256CBA /* JS File */,
 				D9874AA01B4E7139009BDFDB /* Supporting Files */,
-				D9A343E51B67B65F00E1EB7A /* WedfairyUserDefaults.h */,
-				D9A343E61B67B65F00E1EB7A /* WedfairyUserDefaults.m */,
 			);
 			path = Wedfairy;
 			sourceTree = "<group>";
@@ -329,7 +310,6 @@
 		D9874AA01B4E7139009BDFDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D9DBA5E31B5BF93F002936B2 /* Images */,
 				D9874AA11B4E7139009BDFDB /* Info.plist */,
 				D9874AA21B4E7139009BDFDB /* main.m */,
 			);
@@ -362,27 +342,38 @@
 			name = Wechat;
 			sourceTree = "<group>";
 		};
-		D9DBA5D41B5BF7CD002936B2 /* wedfairy icon set */ = {
+		D9A343EB1B689ECB00E1EB7A /* App */ = {
 			isa = PBXGroup;
 			children = (
-				D9DBA5D51B5BF7CD002936B2 /* Icon-40@2x.png */,
-				D9DBA5D61B5BF7CD002936B2 /* Icon-60@2x.png */,
-				D9DBA5D71B5BF7CD002936B2 /* Icon-60@3x.png */,
-				D9DBA5D81B5BF7CD002936B2 /* Icon-Small@2x.png */,
-				D9DBA5D91B5BF7CD002936B2 /* Icon-Small@3x.png */,
-				D9DBA5DA1B5BF7CD002936B2 /* iTunesArtwork.png */,
-				D9DBA5DB1B5BF7CD002936B2 /* iTunesArtwork@2x.png */,
+				D9A343E51B67B65F00E1EB7A /* WedfairyUserDefaults.h */,
+				D9A343E61B67B65F00E1EB7A /* WedfairyUserDefaults.m */,
+				D9874AA41B4E7139009BDFDB /* AppDelegate.h */,
+				D9874AA51B4E7139009BDFDB /* AppDelegate.m */,
+				D90D2EEC1B6F6BCB0084ADB5 /* DeviceDetector.h */,
+				D90D2EED1B6F6BCB0084ADB5 /* DeviceDetector.m */,
 			);
-			path = "wedfairy icon set";
+			name = App;
 			sourceTree = "<group>";
 		};
-		D9DBA5E31B5BF93F002936B2 /* Images */ = {
+		D9A343EC1B689EDB00E1EB7A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D9DBA5E41B5BF9C9002936B2 /* wedfairy_red_logo.jpg */,
-				D9DBA5D41B5BF7CD002936B2 /* wedfairy icon set */,
+				D928A63B1B5BAC0B00256CBA /* PreviewViewController.h */,
+				D928A63C1B5BAC0B00256CBA /* PreviewViewController.m */,
+				D9874AA71B4E7139009BDFDB /* MainViewController.h */,
+				D9874AA81B4E7139009BDFDB /* MainViewController.m */,
+				D9A2E81A1B6F7A98003D8A4A /* GuideViewController.h */,
+				D9A2E81B1B6F7A98003D8A4A /* GuideViewController.m */,
 			);
-			name = Images;
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		D9A343ED1B689EED00E1EB7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9874AAA1B4E7139009BDFDB /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		FB088F21631369EE6534A861 /* Frameworks */ = {
@@ -446,7 +437,7 @@
 				TargetAttributes = {
 					D9874A9C1B4E7139009BDFDB = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = FM4EYX3227;
+						DevelopmentTeam = GXUVPRDYKQ;
 					};
 					D9A3437E1B6267C900E1EB7A = {
 						CreatedOnToolsVersion = 6.4;
@@ -481,25 +472,16 @@
 			files = (
 				D928A61E1B5B9B5300256CBA /* UMShareEditViewControlleriPad.xib in Resources */,
 				D928A6201B5B9B5300256CBA /* UMSnsAccountViewController.xib in Resources */,
-				D9DBA5E01B5BF7CD002936B2 /* Icon-Small@3x.png in Resources */,
-				D9DBA5E51B5BF9C9002936B2 /* wedfairy_red_logo.jpg in Resources */,
 				D928A61B1B5B9B5300256CBA /* UMSCommentInputController.xib in Resources */,
-				D9DBA5DF1B5BF7CD002936B2 /* Icon-Small@2x.png in Resources */,
 				D928A61A1B5B9B5300256CBA /* UMSCommentDetailController.xib in Resources */,
 				D9874AAC1B4E7139009BDFDB /* Main.storyboard in Resources */,
-				D9874AB11B4E7139009BDFDB /* LaunchScreen.xib in Resources */,
 				D928A6221B5B9B5300256CBA /* UMSocialSDKResourcesNew.bundle in Resources */,
-				D9DBA5DD1B5BF7CD002936B2 /* Icon-60@2x.png in Resources */,
 				D928A61C1B5B9B5300256CBA /* UMSCommentInputControlleriPad.xib in Resources */,
 				D928A61D1B5B9B5300256CBA /* UMShareEditViewController.xib in Resources */,
-				D9DBA5DC1B5BF7CD002936B2 /* Icon-40@2x.png in Resources */,
 				D928A6211B5B9B5300256CBA /* UMSShareListController.xib in Resources */,
+				D91255661B6B769800CBDBCF /* Images.xcassets in Resources */,
 				D928A6181B5B9B5300256CBA /* UMSocialLocalizable.strings in Resources */,
-				D9874AAE1B4E7139009BDFDB /* Images.xcassets in Resources */,
-				D9DBA5E21B5BF7CE002936B2 /* iTunesArtwork@2x.png in Resources */,
 				D928A5E21B58E3FA00256CBA /* Adjust_Navbar.js in Resources */,
-				D9DBA5DE1B5BF7CD002936B2 /* Icon-60@3x.png in Resources */,
-				D9DBA5E11B5BF7CE002936B2 /* iTunesArtwork.png in Resources */,
 				D928A61F1B5B9B5300256CBA /* UMSLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,10 +534,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9874AA91B4E7139009BDFDB /* MainViewController.m in Sources */,
+				D9A2E81C1B6F7A98003D8A4A /* GuideViewController.m in Sources */,
 				D9874AA61B4E7139009BDFDB /* AppDelegate.m in Sources */,
 				D9A343E71B67B65F00E1EB7A /* WedfairyUserDefaults.m in Sources */,
 				D9874AA31B4E7139009BDFDB /* main.m in Sources */,
 				D928A63D1B5BAC0B00256CBA /* PreviewViewController.m in Sources */,
+				D90D2EEE1B6F6BCB0084ADB5 /* DeviceDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,14 +577,6 @@
 				D9874AAB1B4E7139009BDFDB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D9874AAF1B4E7139009BDFDB /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9874AB01B4E7139009BDFDB /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -691,7 +667,9 @@
 			baseConfigurationReference = AFF3C717E9EE4A2E12DF8792 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wedfairy/PgySDK/demo/PgySDKDemo",
@@ -708,7 +686,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "八音盒";
-				PROVISIONING_PROFILE = "361ba688-89ec-4f83-8709-272694598c1c";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -717,7 +695,9 @@
 			baseConfigurationReference = DE4736AFA7AF2DB831CE4B9B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Fei Wen (FM4EYX3227)";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Wedfairy/PgySDK/demo/PgySDKDemo",
@@ -734,7 +714,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "八音盒";
-				PROVISIONING_PROFILE = "ec0f254b-19a6-4a32-89d8-afc8a9c70f76";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
